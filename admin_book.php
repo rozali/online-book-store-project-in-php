@@ -28,7 +28,7 @@
 			<td><?php echo $row['book_author']; ?></td>
 			<td><?php echo $row['book_image']; ?></td>
 			<td><?php echo $row['book_descr']; ?></td>
-			<td><?php echo $row['book_price']; ?></td>
+			<td><?php echo rupiah($row['book_price']); ?></td>
 			<td><?php echo getPubName($conn, $row['publisherid']); ?></td>
 			<td><a href="admin_edit.php?bookisbn=<?php echo $row['book_isbn']; ?>">Edit</a></td>
 			<td><a href="admin_delete.php?bookisbn=<?php echo $row['book_isbn']; ?>">Delete</a></td>
