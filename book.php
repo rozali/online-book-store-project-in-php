@@ -48,6 +48,7 @@
                   break;
                 case "book_price":
                   $key = "Price";
+                  $value = rupiah($value);
                   break;
               }
             ?>
