@@ -1,16 +1,19 @@
 <?php	
+	require_once("./functions/database_functions.php");
+	$conn = db_connect();
+
 	// if save change happen
 	if(!isset($_POST['save_change'])){
 		echo "Something wrong!";
 		exit;
 	}
 
-	$isbn = trim($_POST['isbn']);
-	$title = trim($_POST['title']);
-	$author = trim($_POST['author']);
-	$descr = trim($_POST['descr']);
-	$price = floatval(trim($_POST['price']));
-	$publisher = trim($_POST['publisher']);
+	$isbn = mysqli_real_escape_string($conn, $_POST['isbn']);
+	$title = mysqli_real_escape_string($conn, $_POST['title']);
+	$author = mysqli_real_escape_string($conn, $_POST['author']);
+	$descr = mysqli_real_escape_string($conn, $_POST['descr']);
+	$price = floatval(mysqli_real_escape_string($conn, $_POST['price']));
+	$publisher = mysqli_real_escape_string($conn, $_POST['publisher']);
 
 	if(isset($_FILES['image']) && $_FILES['image']['name'] != ""){
 		$image = $_FILES['image']['name'];
@@ -19,9 +22,6 @@
 		$uploadDirectory .= $image;
 		move_uploaded_file($_FILES['image']['tmp_name'], $uploadDirectory);
 	}
-
-	require_once("./functions/database_functions.php");
-	$conn = db_connect();
 
 	// if publisher is not in db, create new
 	$findPub = "SELECT * FROM publisher WHERE publisher_name = '$publisher'";
