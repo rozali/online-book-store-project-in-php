@@ -14,6 +14,10 @@
 	require_once "./functions/cart_functions.php";
 
 	// book_isbn got from form post method, change this place later.
+	if(isset($_GET['action']) == 'empty'){
+		unset($_SESSION['cart']);
+	}
+
 	if(isset($_POST['bookisbn'])){
 		$book_isbn = $_POST['bookisbn'];
 	}
@@ -85,7 +89,8 @@
 	   	<input type="submit" class="btn btn-primary" name="save_change" value="Save Changes">
 	</form>
 	<br/><br/>
-	<a href="checkout.php" class="btn btn-primary">Go To Checkout</a> 
+	<a href="cart.php?action=empty" class="btn btn-primary">Empty Cart</a>
+	<a href="checkout.php" class="btn btn-primary">Go To Checkout</a>
 	<a href="books.php" class="btn btn-primary">Continue Shopping</a>
 <?php
 	} else {
