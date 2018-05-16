@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">CSE Bookstore</a>
+          <a class="navbar-brand" href="index.php">Global Science</a>
         </div>
 
         <!--/.navbar-collapse -->
@@ -47,9 +47,9 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Welcome to online CSE bookstore</h1>
-        <p class="lead">This site has been made using PHP with MYSQL (procedure functions)!</p>
-        <p>The layout use Bootstrap to make it more responsive. It's just a simple web!</p>
+        <h1>Welcome to online Global Science bookstore</h1>
+        <!-- <p class="lead">This site has been made using PHP with MYSQL (procedure functions)!</p>
+        <p>The layout use Bootstrap to make it more responsive. It's just a simple web!</p> -->
       </div>
     </div>
     <?php } ?>
