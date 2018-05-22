@@ -10,6 +10,7 @@
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="./bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="./bootstrap/css/jumbotron.css" rel="stylesheet">
+    <link href="./bootstrap/css/cust-element.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -27,7 +28,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Global Science</a>
+          <a class="navbar-brand" href="index.php">
+           <img src="./bootstrap/img/ico.png">
+          </a>
         </div>
 
         <!--/.navbar-collapse -->
