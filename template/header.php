@@ -28,10 +28,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">
+          <a class="navbar-brand" href="index.php" style="padding: 0px;">
            <img src="./bootstrap/img/ico.png">
           </a>
         </div>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
 
         <!--/.navbar-collapse -->
         <div id="navbar" class="navbar-collapse collapse">
