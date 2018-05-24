@@ -15,6 +15,8 @@
   $title = "Full Catalogs of Books";
   require_once "./template/header.php";
 ?>
+<div class="row">
+  <div class="col-md-9">
   <p class="lead text-center text-muted">Full Catalogs of Books</p>
     <?php for($i = 0; $i < mysqli_num_rows($result); $i++){ ?>
       <div class="row">
@@ -35,5 +37,12 @@
 <?php
       }
   if(isset($conn)) { mysqli_close($conn); }
+?>
+  </div>
+  <div class="col-md-3">
+    <p> Reserved for custom Search </p>
+  </div>
+</div>
+<?php
   require_once "./template/footer.php";
 ?>
