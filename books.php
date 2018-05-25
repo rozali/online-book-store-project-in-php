@@ -38,9 +38,62 @@
       }
   if(isset($conn)) { mysqli_close($conn); }
 ?>
-  </div>
+</div>
   <div class="col-md-3">
-    <p> Reserved for custom Search </p>
+    <div class="panel panel-default sidebar-menu" id="accordion">
+      <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+      </div>
+      <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked category-menu">
+          <li>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Cetegories 1 <span class="badge pull-right">42</span></a>
+            <div id="collapseOne" class="panel-collapse collapse in">
+            <ul>
+              <li><a href="category.html">Sub Categories 1</a>
+              </li>
+              <li><a href="category.html">Sub Categories 1</a>
+              </li>
+              <li><a href="category.html">Sub Categories 1</a>
+              </li>
+              <li><a href="category.html">Sub Categories 1</a>
+              </li>
+            </ul>
+            </div>
+          </li>
+          <li>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Categories 2 <span class="badge pull-right">123</span></a>
+            <div id="collapseTwo" class="panel-collapse collapse">
+            <ul>
+              <li><a href="category.html">Sub Categories 2</a>
+              </li>
+              <li><a href="category.html">Sub Categories 2</a>
+              </li>
+              <li><a href="category.html">Sub Categories 2</a>
+              </li>
+              <li><a href="category.html">Sub Categories 2</a>
+              </li>
+            </ul>
+            </div>
+          </li>
+          <li>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Categories 3 <span class="badge pull-right">11</span></a>
+            <div id="collapseThree" class="panel-collapse collapse">
+            <ul>
+              <li><a href="category.html">Sub Categories 3</a>
+              </li>
+              <li><a href="category.html">Sub Categories 3</a>
+              </li>
+              <li><a href="category.html">Sub Categories 3</a>
+              </li>
+              <li><a href="category.html">Sub Categories 3</a>
+              </li>
+            </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 <?php
