@@ -42,28 +42,28 @@
 			?>
 		<tr>
 			<td><?php echo $book['book_title'] . " by " . $book['book_author']; ?></td>
-			<td><?php echo "$" . $book['book_price']; ?></td>
+			<td><?php echo rupiah($book['book_price']); ?></td>
 			<td><?php echo $qty; ?></td>
-			<td><?php echo "$" . $qty * $book['book_price']; ?></td>
+			<td><?php echo rupiah($qty * $book['book_price']); ?></td>
 		</tr>
 		<?php } ?>
 		<tr>
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
 			<th><?php echo $_SESSION['total_items']; ?></th>
-			<th><?php echo "$" . $_SESSION['total_price']; ?></th>
+			<th><?php echo rupiah($_SESSION['total_price']); ?></th>
 		</tr>
 		<tr>
-			<td>Shipping</td>
+			<td>Pengiriman</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>Free</td>
 		</tr>
 		<tr>
-			<th>Total Including Shipping</th>
+			<th>Total Termasuk Biaya Kirim</th>
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
-			<th><?php echo "$" . ($_SESSION['total_price'] + 0); ?></th>
+			<th><?php echo rupiah(($_SESSION['total_price'] + 0)); ?></th>
 		</tr>
 	</table>
 	<form method="post" action="process.php" class="form-horizontal">
@@ -114,7 +114,7 @@
 	<p class="lead">Please press Purchase to confirm your purchase, or Continue Shopping to add or remove items.</p>
 <?php
 	} else {
-		echo "<p class=\"text-warning\">Your cart is empty! Please make sure you add some books in it!</p>";
+		echo "<p class=\"text-warning\">Keranjang Belanja anda kosong! Silahkan kembali ke halaman <a href=\"books.php\">buku</a> untuk belanja!</p>";
 	}
 	if(isset($conn)){ mysqli_close($conn); }
 	require_once "./template/footer.php";

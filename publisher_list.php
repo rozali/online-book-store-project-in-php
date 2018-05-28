@@ -17,7 +17,7 @@
 	$title = "List Of Publishers";
 	require "./template/header.php";
 ?>
-	<p class="lead">List of Publisher</p>
+	<p class="lead">Daftar Penerbit</p>
 	<ul>
 	<?php 
 		while($row = mysqli_fetch_assoc($result)){
@@ -40,7 +40,7 @@
 		</li>
 	<?php } ?>
 		<li>
-			<a href="books.php">List full of books</a>
+			<a href="books.php">Katalog Buku Lengkap</a>
 		</li>
 	</ul>
 <?php

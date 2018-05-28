@@ -12,12 +12,12 @@
 	<table class="table" style="margin-top: 20px">
 		<tr>
 			<th>ISBN</th>
-			<th>Title</th>
-			<th>Author</th>
-			<th>Image</th>
-			<th>Description</th>
-			<th>Price</th>
-			<th>Publisher</th>
+			<th>Judul</th>
+			<th>Penulis</th>
+			<th>Gambar</th>
+			<th>Keterangan</th>
+			<th>Harga</th>
+			<th>Penerbit</th>
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
 		</tr>

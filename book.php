@@ -22,15 +22,15 @@
   require "./template/header.php";
 ?>
       <!-- Example row of columns -->
-      <p class="lead" style="margin: 25px 0"><a href="books.php">Books</a> > <?php echo $row['book_title']; ?></p>
+      <p class="lead" style="margin: 25px 0"><a href="books.php">Buku</a> > <?php echo $row['book_title']; ?></p>
       <div class="row">
         <div class="col-md-3 text-center">
           <img class="img-responsive img-thumbnail" src="./bootstrap/img/<?php echo $row['book_image']; ?>">
         </div>
         <div class="col-md-6">
-          <h4>Book Description</h4>
+          <h4>Deskripsi Buku</h4>
           <p><?php echo $row['book_descr']; ?></p>
-          <h4>Book Details</h4>
+          <h4>Rincian Buku</h4>
           <table class="table">
           	<?php foreach($row as $key => $value){
               if($key == "book_descr" || $key == "book_image" || $key == "publisherid" || $key == "book_title"){
@@ -41,13 +41,13 @@
                   $key = "ISBN";
                   break;
                 case "book_title":
-                  $key = "Title";
+                  $key = "Judul";
                   break;
                 case "book_author":
-                  $key = "Author";
+                  $key = "Penulis";
                   break;
                 case "book_price":
-                  $key = "Price";
+                  $key = "Harga";
                   $value = rupiah($value);
                   break;
               }
@@ -63,7 +63,7 @@
           </table>
           <form method="post" action="cart.php">
             <input type="hidden" name="bookisbn" value="<?php echo $book_isbn;?>">
-            <input type="submit" value="Purchase / Add to cart" name="cart" class="btn btn-primary">
+            <input type="submit" value="Beli / Tambahkan ke Keranjang" name="cart" class="btn btn-primary">
           </form>
        	</div>
       </div>

@@ -84,7 +84,7 @@
 	<p class="lead">Please press Purchase to confirm your purchase, or Continue Shopping to add or remove items.</p>
 <?php
 	} else {
-		echo "<p class=\"text-warning\">Your cart is empty! Please make sure you add some books in it!</p>";
+		echo "<p class=\"text-warning\">Keranjang Belanja anda kosong! Silahkan kembali ke halaman <a href=\"books.php\">buku</a> untuk belanja!</p>";
 	}
 	if(isset($conn)){ mysqli_close($conn); }
 	require_once "./template/footer.php";

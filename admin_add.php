@@ -70,27 +70,27 @@
 				<td><input type="text" name="isbn"></td>
 			</tr>
 			<tr>
-				<th>Title</th>
+				<th>Judul</th>
 				<td><input type="text" name="title" required></td>
 			</tr>
 			<tr>
-				<th>Author</th>
+				<th>Penulis</th>
 				<td><input type="text" name="author" required></td>
 			</tr>
 			<tr>
-				<th>Image</th>
+				<th>Gambar</th>
 				<td><input type="file" name="image"></td>
 			</tr>
 			<tr>
-				<th>Description</th>
+				<th>Keterangan</th>
 				<td><textarea name="descr" cols="40" rows="5"></textarea></td>
 			</tr>
 			<tr>
-				<th>Price</th>
+				<th>Harga</th>
 				<td><input type="text" name="price" required></td>
 			</tr>
 			<tr>
-				<th>Publisher</th>
+				<th>Penerbit</th>
 				<td><input type="text" name="publisher" required></td>
 			</tr>
 		</table>

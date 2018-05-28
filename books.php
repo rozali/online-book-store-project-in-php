@@ -17,7 +17,7 @@
 ?>
 <div class="row">
   <div class="col-md-9">
-  <p class="lead text-center text-muted">Full Catalogs of Books</p>
+  <p class="lead text-center text-muted">Katalog Buku</p>
     <?php for($i = 0; $i < mysqli_num_rows($result); $i++){ ?>
       <div class="row">
         <?php while($query_row = mysqli_fetch_assoc($result)){ ?>
