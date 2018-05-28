@@ -19,9 +19,9 @@
 ?>
 	<table class="table">
 		<tr>
-			<th>Item</th>
-			<th>Price</th>
-	    	<th>Quantity</th>
+			<th>Buku</th>
+			<th>Harga</th>
+	    	<th>Jumlah</th>
 	    	<th>Total</th>
 	    </tr>
 	    	<?php
@@ -48,35 +48,35 @@
 			<p class="text-danger">All fields have to be filled</p>
 			<?php } ?>
 		<div class="form-group">
-			<label for="name" class="control-label col-md-4">Name</label>
+			<label for="nama" class="control-label col-md-4">Nama</label>
 			<div class="col-md-4">
-				<input type="text" name="name" class="col-md-4" class="form-control">
+				<input type="text" name="nama" class="col-md-4" class="form-control">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="address" class="control-label col-md-4">Address</label>
+			<label for="NoHp" class="control-label col-md-4">No. Hp</label>
 			<div class="col-md-4">
-				<input type="text" name="address" class="col-md-4" class="form-control">
+				<input type="text" name="noHp" class="col-md-4" class="form-control">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="city" class="control-label col-md-4">City</label>
+			<label for="Email" class="control-label col-md-4">Email</label>
 			<div class="col-md-4">
-				<input type="text" name="city" class="col-md-4" class="form-control">
+				<input type="text" name="email" class="col-md-4" class="form-control">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="zip_code" class="control-label col-md-4">Zip Code</label>
+			<label for="Alamat" class="control-label col-md-4">Alamat</label>
 			<div class="col-md-4">
-				<input type="text" name="zip_code" class="col-md-4" class="form-control">
+				<input type="text" name="alamat" class="col-md-4" class="form-control">
 			</div>
 		</div>
-		<div class="form-group">
+		<!-- <div class="form-group">
 			<label for="country" class="control-label col-md-4">Country</label>
 			<div class="col-md-4">
 				<input type="text" name="country" class="col-md-4" class="form-control">
 			</div>
-		</div>
+		</div> -->
 		<div class="form-group">
 			<input type="submit" name="submit" value="Purchase" class="btn btn-primary">
 		</div>

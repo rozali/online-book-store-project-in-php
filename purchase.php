@@ -30,9 +30,9 @@
 ?>
 	<table class="table">
 		<tr>
-			<th>Item</th>
-			<th>Price</th>
-	    	<th>Quantity</th>
+			<th>Buku</th>
+			<th>Harga</th>
+	    	<th>Jumlah</th>
 	    	<th>Total</th>
 	    </tr>
 	    	<?php
@@ -57,13 +57,13 @@
 			<td>Shipping</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
-			<td>20.00</td>
+			<td>Free</td>
 		</tr>
 		<tr>
 			<th>Total Including Shipping</th>
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
-			<th><?php echo "$" . ($_SESSION['total_price'] + 20); ?></th>
+			<th><?php echo "$" . ($_SESSION['total_price'] + 0); ?></th>
 		</tr>
 	</table>
 	<form method="post" action="process.php" class="form-horizontal">

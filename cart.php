@@ -52,7 +52,7 @@
 	}
 
 	// print out header here
-	$title = "Your shopping cart";
+	$title = "Keranjang Belanja";
 	require "./template/header.php";
 
 	if(isset($_SESSION['cart']) && (array_count_values($_SESSION['cart']))){
@@ -62,9 +62,9 @@
    	<form action="cart.php" method="post">
 	   	<table class="table">
 	   		<tr>
-	   			<th>Item</th>
-	   			<th>Price</th>
-	  			<th>Quantity</th>
+	   			<th>Buku</th>
+	   			<th>Harga</th>
+	  			<th>jumlah</th>
 	   			<th>Total</th>
 	   		</tr>
 	   		<?php
@@ -86,15 +86,15 @@
 		    	<th><?php echo rupiah($_SESSION['total_price']); ?></th>
 		    </tr>
 	   	</table>
-	   	<input type="submit" class="btn btn-primary" name="save_change" value="Save Changes">
+	   	<input type="submit" class="btn btn-primary" name="save_change" value="Simpan">
 	</form>
 	<br/><br/>
-	<a href="cart.php?action=empty" class="btn btn-primary">Empty Cart</a>
-	<a href="checkout.php" class="btn btn-primary">Go To Checkout</a>
-	<a href="books.php" class="btn btn-primary">Continue Shopping</a>
+	<a href="cart.php?action=empty" class="btn btn-primary">Kosongkan</a>
+	<a href="checkout.php" class="btn btn-primary">Pembayaran</a>
+	<a href="books.php" class="btn btn-primary">Lanjutkan Belanja</a>
 <?php
 	} else {
-		echo "<p class=\"text-warning\">Your cart is empty! Please make sure you add some books in it!</p>";
+		echo "<p class=\"text-warning\">Keranjang Belanja anda kosong! Silahkan kembali ke halaman <a href=\"books.php\">buku</a> untuk belanja!</p>";
 	}
 	if(isset($conn)){ mysqli_close($conn); }
 	require_once "./template/footer.php";
