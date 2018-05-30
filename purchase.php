@@ -81,7 +81,7 @@
       </div>
       <div class="panel-footer">
         <p>Pembayaran dapat dilakukan ke nomer rekening Global Science berikut:</p>
-        <img class="img-responsive img-thumbnail" src="./bootstrap/img/atm4.png">
+        <img class="img-responsive img-thumbnail" src="./bootstrap/img/bni.png">
         <p>Fitur pembayaran lainnya akan segera hadir!</p>
       </div>
     </div>
