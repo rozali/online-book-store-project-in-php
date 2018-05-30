@@ -17,70 +17,81 @@
 
 	if(isset($_SESSION['cart']) && (array_count_values($_SESSION['cart']))){
 ?>
-	<table class="table">
-		<tr>
-			<th>Buku</th>
-			<th>Harga</th>
-	    	<th>Jumlah</th>
-	    	<th>Total</th>
-	    </tr>
-	    	<?php
-			    foreach($_SESSION['cart'] as $isbn => $qty){
-					$conn = db_connect();
-					$book = mysqli_fetch_assoc(getBookByIsbn($conn, $isbn));
-			?>
-		<tr>
-			<td><?php echo $book['book_title'] . " by " . $book['book_author']; ?></td>
-			<td><?php echo rupiah($book['book_price']); ?></td>
-			<td><?php echo $qty; ?></td>
-			<td><?php echo rupiah($qty * $book['book_price']); ?></td>
-		</tr>
-		<?php } ?>
-		<tr>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th><?php echo $_SESSION['total_items']; ?></th>
-			<th><?php echo rupiah($_SESSION['total_price']); ?></th>
-		</tr>
-	</table>
-	<form method="post" action="purchase.php" class="form-horizontal">
-		<?php if(isset($_SESSION['err']) && $_SESSION['err'] == 1){ ?>
-			<p class="text-danger">All fields have to be filled</p>
-			<?php } ?>
-		<div class="form-group">
-			<label for="nama" class="control-label col-md-4">Nama</label>
-			<div class="col-md-4">
-				<input type="text" name="nama" class="col-md-4" class="form-control">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="NoHp" class="control-label col-md-4">No. Hp</label>
-			<div class="col-md-4">
-				<input type="text" name="noHp" class="col-md-4" class="form-control">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="Email" class="control-label col-md-4">Email</label>
-			<div class="col-md-4">
-				<input type="text" name="email" class="col-md-4" class="form-control">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="Alamat" class="control-label col-md-4">Alamat</label>
-			<div class="col-md-4">
-				<input type="text" name="alamat" class="col-md-4" class="form-control">
-			</div>
-		</div>
-		<!-- <div class="form-group">
-			<label for="country" class="control-label col-md-4">Country</label>
-			<div class="col-md-4">
-				<input type="text" name="country" class="col-md-4" class="form-control">
-			</div>
-		</div> -->
-		<div class="form-group">
-			<input type="submit" name="submit" value="Purchase" class="btn btn-primary">
-		</div>
-	</form>
+<div class="row">
+  <div class="col-md-8">
+      <div class="panel panel-info">
+          <div class="panel-heading">
+              Detail Barang
+          </div>
+          <div class="panel-body">
+              <table class="table">
+								<tr>
+									<th>Buku</th>
+									<th>Harga</th>
+							    	<th>Jumlah</th>
+							    	<th>Total</th>
+							    </tr>
+							    	<?php
+									    foreach($_SESSION['cart'] as $isbn => $qty){
+											$conn = db_connect();
+											$book = mysqli_fetch_assoc(getBookByIsbn($conn, $isbn));
+									?>
+								<tr>
+									<td><?php echo $book['book_title'] . " by " . $book['book_author']; ?></td>
+									<td><?php echo rupiah($book['book_price']); ?></td>
+									<td><?php echo $qty; ?></td>
+									<td><?php echo rupiah($qty * $book['book_price']); ?></td>
+								</tr>
+								<?php } ?>
+								<tr>
+									<th>&nbsp;</th>
+									<th>&nbsp;</th>
+									<th><?php echo $_SESSION['total_items']; ?></th>
+									<th><?php echo rupiah($_SESSION['total_price']); ?></th>
+								</tr>
+							</table>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-4">
+  	<div class="panel panel-green">
+  		<div class="panel-heading">
+  			Data Pembeli
+  		</div>
+  		<div class="panel-body">
+  			<form method="post" action="purchase.php" class="form">
+				<?php if(isset($_SESSION['err']) && $_SESSION['err'] == 1){ ?>
+					<p class="text-danger">All fields have to be filled</p>
+					<?php } ?>
+				<div class="form-group input-group">
+					<span class="input-group-addon">Nama</span>
+					<input type="text" name="nama" class="form-control">
+				</div>
+				<div class="form-group input-group">
+					<span class="input-group-addon">No Hp</span>
+					<input type="tel" pattern="\d{12}$" name="noHp" class="form-control">
+				</div>
+				<div class="form-group input-group">
+					<span class="input-group-addon">Email</span>
+					<input type="email" name="email" class="form-control">
+				</div>
+				<div class="form-group input-group">
+					<span class="input-group-addon">Alamat</span>
+					<textarea type="text" name="alamat" class="form-control"> </textarea>
+				</div>
+				<div class="form-group">
+						<input type="submit" name="submit" value="Purchase" class="btn btn-primary">
+				</div>
+				</form>
+  		</div>
+  		<div class="panel-footer">
+        <div class="alert alert-danger">
+          Mohon masukkan data dengan benar.
+        </div>
+      </div>
+  	</div>
+  </div>
+</div>
 	<p class="lead">Please press Purchase to confirm your purchase, or Continue Shopping to add or remove items.</p>
 <?php
 	} else {

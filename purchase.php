@@ -66,51 +66,27 @@
 			<th><?php echo rupiah(($_SESSION['total_price'] + 0)); ?></th>
 		</tr>
 	</table>
-	<form method="post" action="process.php" class="form-horizontal">
-		<?php if(isset($_SESSION['err']) && $_SESSION['err'] == 1){ ?>
-		<p class="text-danger">All fields have to be filled</p>
-		<?php } ?>
-        <div class="form-group">
-            <label for="card_type" class="col-lg-2 control-label">Type</label>
-            <div class="col-lg-10">
-              	<select class="form-control" name="card_type">
-                  	<option value="VISA">VISA</option>
-                  	<option value="MasterCard">MasterCard</option>
-                  	<option value="American Express">American Express</option>
-              	</select>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="card_number" class="col-lg-2 control-label">Number</label>
-            <div class="col-lg-10">
-              	<input type="text" class="form-control" name="card_number">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="card_PID" class="col-lg-2 control-label">PID</label>
-            <div class="col-lg-10">
-              	<input type="text" class="form-control" name="card_PID">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="card_expire" class="col-lg-2 control-label">Expiry Date</label>
-            <div class="col-lg-10">
-              	<input type="date" name="card_expire" class="form-control">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="card_owner" class="col-lg-2 control-label">Name</label>
-            <div class="col-lg-10">
-              	<input type="text" class="form-control" name="card_owner">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-lg-10 col-lg-offset-2">
-              	<button type="reset" class="btn btn-default">Cancel</button>
-              	<button type="submit" class="btn btn-primary">Purchase</button>
-            </div>
-        </div>
-    </form>
+<row>
+	<div class="col-md-12">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+          Transfer ATM
+      </div>
+      <div class="panel-body">
+        <p>Pembayaran manual dengan ATM.</p>
+        <div class="col-md-3"><img class="img-responsive img-thumbnail" src="./bootstrap/img/atm.png"><p>Transfer melalui ATM, SMS/M-Banking, dan E-Banking</p></div>
+        <div class="col-md-3"><img class="img-responsive img-thumbnail" src="./bootstrap/img/atm2.png"><p>Masukan nomer rekening Global Science</p></div>
+        <div class="col-md-3"><img class="img-responsive img-thumbnail" src="./bootstrap/img/atm3.png"><p>Masukkan jumlah bayar sesuai dengan tagihan anda</p></div>
+        <div class="col-md-3"><img class="img-responsive img-thumbnail" src="./bootstrap/img/atm4.png"><p>Upload bukti transfer DISINI atau langsung dapat mengubungi CP kami di 081249420465 untuk proses lebih cepat</p></div>
+      </div>
+      <div class="panel-footer">
+        <p>Pembayaran dapat dilakukan ke nomer rekening Global Science berikut:</p>
+        <img class="img-responsive img-thumbnail" src="./bootstrap/img/atm4.png">
+        <p>Fitur pembayaran lainnya akan segera hadir!</p>
+      </div>
+    </div>
+  </div>
+</row>
 	<p class="lead">Please press Purchase to confirm your purchase, or Continue Shopping to add or remove items.</p>
 <?php
 	} else {
