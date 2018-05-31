@@ -66,7 +66,7 @@
 			<th><?php echo rupiah(($_SESSION['total_price'] + 0)); ?></th>
 		</tr>
 	</table>
-<row>
+<div class="row">
 	<div class="col-md-12">
     <div class="panel panel-primary">
       <div class="panel-heading">
@@ -77,7 +77,29 @@
         <div class="col-md-3"><img class="img-responsive img-thumbnail" src="./bootstrap/img/atm.png"><p>Transfer melalui ATM, SMS/M-Banking, dan E-Banking</p></div>
         <div class="col-md-3"><img class="img-responsive img-thumbnail" src="./bootstrap/img/atm2.png"><p>Masukan nomer rekening Global Science</p></div>
         <div class="col-md-3"><img class="img-responsive img-thumbnail" src="./bootstrap/img/atm3.png"><p>Masukkan jumlah bayar sesuai dengan tagihan anda</p></div>
-        <div class="col-md-3"><img class="img-responsive img-thumbnail" src="./bootstrap/img/atm4.png"><p>Upload bukti transfer DISINI atau langsung dapat mengubungi CP kami di 081249420465 untuk proses lebih cepat</p></div>
+        <div class="col-md-3"><img class="img-responsive img-thumbnail" src="./bootstrap/img/atm4.png"><p>Upload bukti transfer <a href="#" data-toggle="modal" data-target="#myModal">DISINI</a> atau langsung dapat mengubungi CP kami di 081249420465 untuk proses lebih cepat</p></div>
+      </div>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">Upload Bukti Transfer</h4>
+            </div>
+            <div class="modal-body">
+                <form id="formup" method="post" action="upload.php" enctype="multipart/form-data">
+                  <label>Upload bukti transfer anda disini</label>
+                  <input type="file" name="buktitrf">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" form="formup" class="btn btn-primary">Upload</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
       </div>
       <div class="panel-footer">
         <p>Pembayaran dapat dilakukan ke nomer rekening Global Science berikut:</p>
@@ -86,8 +108,7 @@
       </div>
     </div>
   </div>
-</row>
-	<p class="lead">Please press Purchase to confirm your purchase, or Continue Shopping to add or remove items.</p>
+</div>
 <?php
 	} else {
 		echo "<p class=\"text-warning\">Keranjang Belanja anda kosong! Silahkan kembali ke halaman <a href=\"books.php\">buku</a> untuk belanja!</p>";
