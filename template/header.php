@@ -11,12 +11,11 @@
     <link href="./bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="./bootstrap/css/jumbotron.css" rel="stylesheet">
     <link href="./bootstrap/css/cust-element.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -29,24 +28,20 @@
            <img src="./bootstrap/img/ico.png">
           </a>
         </div>
-        <form class="navbar-form navbar-left" role="search">
+        <!--/.navbar-collapse -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
 
-        <!--/.navbar-collapse -->
-        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-              <!-- link to publiser_list.php -->
-              <li><a href="publisher_list.php"><span class="glyphicon glyphicon-paperclip"></span>&nbsp; Penerbit</a></li>
-              <!-- link to books.php -->
-              <li><a href="books.php"><span class="glyphicon glyphicon-book"></span>&nbsp; Buku</a></li>
-              <!-- link to contacts.php -->
-              <!-- <li><a href="contact.php"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp; Contact</a></li> -->
-              <!-- link to shopping cart -->
-              <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp; Keranjang</a></li>
+              <li><a href="books.php"><i class="fas fa-book"></i>&nbsp; Buku</a></li>
+              <li><a href="publisher_list.php"><i class="fas fa-paperclip"></i>&nbsp; Penerbit</a></li>
+              <li><a href="publication.php"><i class="fas fa-barcode"></i>&nbsp; Publikasi</a></li>
+              <li><a href="cart.php"><i class="fas fa-shopping-cart"></i>&nbsp; Keranjang</a></li>
             </ul>
         </div>
       </div>
