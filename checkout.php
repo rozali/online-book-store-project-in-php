@@ -19,7 +19,7 @@
 ?>
 <div class="row">
   <div class="col-md-8">
-      <div class="panel panel-info">
+      <div class="panel panel-default">
           <div class="panel-heading">
               Detail Barang
           </div>
@@ -92,7 +92,6 @@
   	</div>
   </div>
 </div>
-	<p class="lead">Please press Purchase to confirm your purchase, or Continue Shopping to add or remove items.</p>
 <?php
 	} else {
 		echo "<p class=\"text-warning\">Keranjang Belanja anda kosong! Silahkan kembali ke halaman <a href=\"books.php\">buku</a> untuk belanja!</p>";
