@@ -65,11 +65,11 @@
 					<?php } ?>
 				<div class="form-group input-group">
 					<span class="input-group-addon">Nama</span>
-					<input type="text" name="nama" class="form-control">
+					<input type="text" name="name" class="form-control">
 				</div>
 				<div class="form-group input-group">
 					<span class="input-group-addon">No Hp</span>
-					<input type="tel" pattern="\d{12}$" name="noHp" class="form-control">
+					<input type="tel" pattern="\d{12}$" name="phone" class="form-control">
 				</div>
 				<div class="form-group input-group">
 					<span class="input-group-addon">Email</span>
@@ -77,7 +77,7 @@
 				</div>
 				<div class="form-group input-group">
 					<span class="input-group-addon">Alamat</span>
-					<textarea type="text" name="alamat" class="form-control"> </textarea>
+					<textarea type="text" name="address" class="form-control"> </textarea>
 				</div>
 				<div class="form-group">
 						<input type="submit" name="submit" value="Purchase" class="btn btn-primary">

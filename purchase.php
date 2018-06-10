@@ -87,14 +87,14 @@
               <h4 class="modal-title" id="myModalLabel">Upload Bukti Transfer</h4>
             </div>
             <div class="modal-body">
-                <form id="formup" method="post" action="upload.php" enctype="multipart/form-data">
+                <form id="formup" method="post" action="process.php" enctype="multipart/form-data">
                   <label>Upload bukti transfer anda disini</label>
-                  <input type="file" name="buktitrf">
+                  <input type="file" name="invoice">
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" form="formup" class="btn btn-primary">Upload</button>
+                <button type="submit" form="formup" class="btn btn-primary">Upload</button>
             </div>
           </div>
           <!-- /.modal-content -->

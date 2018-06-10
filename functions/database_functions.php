@@ -43,9 +43,9 @@
 		return $row['orderid'];
 	}
 
-	function insertIntoOrder($conn, $customerid, $total_price, $date, $ship_name, $ship_address, $ship_city, $ship_zip_code, $ship_country){
+	function insertIntoOrder($conn, $customerid, $total_price, $date, $ship_name, $ship_address, $ship_phone, $ship_email, $ship_invoice){
 		$query = "INSERT INTO orders VALUES 
-		('', '" . $customerid . "', '" . $total_price . "', '" . $date . "', '" . $ship_name . "', '" . $ship_address . "', '" . $ship_city . "', '" . $ship_zip_code . "', '" . $ship_country . "')";
+		('', '" . $customerid . "', '" . $total_price . "', '" . $date . "', '" . $ship_name . "', '" . $ship_address . "', '" . $ship_phone . "', '" . $ship_email . "', '" . $ship_invoice . "')";
 		$result = mysqli_query($conn, $query);
 		if(!$result){
 			echo "Insert orders failed " . mysqli_error($conn);
@@ -65,14 +65,13 @@
 		return $row['book_price'];
 	}
 
-	function getCustomerId($name, $address, $city, $zip_code, $country){
+	function getCustomerId($name, $address, $phone, $email){
 		$conn = db_connect();
 		$query = "SELECT customerid from customers WHERE 
 		name = '$name' AND 
 		address= '$address' AND 
-		city = '$city' AND 
-		zip_code = '$zip_code' AND 
-		country = '$country'";
+		phone = '$phone' AND 
+		email = '$email'";
 		$result = mysqli_query($conn, $query);
 		// if there is customer in db, take it out
 		if($result){
@@ -83,10 +82,10 @@
 		}
 	}
 
-	function setCustomerId($name, $address, $city, $zip_code, $country){
+	function setCustomerId($name, $address, $phone, $email){
 		$conn = db_connect();
 		$query = "INSERT INTO customers VALUES 
-			('', '" . $name . "', '" . $address . "', '" . $city . "', '" . $zip_code . "', '" . $country . "')";
+			('', '" . $name . "', '" . $address . "', '" . $phone . "', '" . $email . "')";
 
 		$result = mysqli_query($conn, $query);
 		if(!$result){
