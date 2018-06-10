@@ -40,17 +40,16 @@
         <div class="footerp"> 
           <h2 class="title-median">Global Science CV.</h2>
           <p><b>Email id:</b> <a href="mailto:globalscience.cv@gmail.com">globalscience.cv@gmail.com</a></p>
-          <p><b>Helpline Numbers </b><b style="color:#ffc106;">(08:00 - 22:00 WIB):</b>  +62 812-4942-0465  </p>
-          <p><b>Corp Office / Postal Address</b></p>
+          <p><b>Helpline Numbers </b><b style="color:#ffc106;">(09:00 - 22:00 WIB):</b>  +62 812-4942-0465  </p>
           <p><b>Phone Numbers : </b>+62 857-5281-9220, </p>
           <p> +62 812-4942-0465, +62 821-3211-6373</p>
         </div>
         <div class="social-icons">
           <ul class="nomargin">
-            <a href="https://www.facebook.com/bootsnipp"><i class="fab fa-facebook-square fa-3x social-fb" id="social"></i></a>
-            <a href="https://twitter.com/bootsnipp"><i class="fab fa-twitter-square fa-3x social-tw" id="social"></i></a>
-            <a href="https://plus.google.com/+Bootsnipp-page"><i class="fab fa-google-plus-square fa-3x social-gp" id="social"></i></a>
-            <a href="mailto:bootsnipp@gmail.com"><i class="fas fa-envelope-square fa-3x social-em" id="social"></i></a>
+            <a href="#"><i class="fab fa-facebook-square fa-3x social-fb" id="social"></i></a>
+            <a href="#"><i class="fab fa-twitter-square fa-3x social-tw" id="social"></i></a>
+            <a href="#"><i class="fab fa-google-plus-square fa-3x social-gp" id="social"></i></a>
+            <a href="mailto:globalscience.cv@gmail.com"><i class="fas fa-envelope-square fa-3x social-em" id="social"></i></a>
           </ul>
         </div>
       </li>
