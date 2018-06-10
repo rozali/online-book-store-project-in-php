@@ -2,7 +2,7 @@
 	session_start();
 	require_once "./functions/admin.php";
 	$title = "Add new book";
-	require "./template/header.php";
+	require "./template/admin_header.php";
 	require "./functions/database_functions.php";
 	$conn = db_connect();
 
