@@ -1,3 +1,104 @@
+/* 
+-------------------------
+GENERAL SETTING, START!
+-------------------------
+*/
+body{
+    padding-top: 50px;
+}
+span:nth-child(1){
+  color: #00008B;
+}
+span:nth-child(2){
+  color: #800000;
+}
+#main > :first-child{
+  margin-top: 30px;
+}
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.btn-template-outlined {
+  background: none;
+  border: 1px solid #4fbfa8 !important;
+  color: #4fbfa8;
+  border-radius: 0 !important;
+  text-decoration: none;
+}
+
+.btn-template-outlined:hover, .btn-template-outlined:focus {
+  background: #4fbfa8;
+  color: #fff !important;
+}
+.spacing {
+  margin-top: 30px;
+}
+.jumbotron {
+  background-image: url("../img/bgj.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+/*
+-----------------------
+END OF GENERAL SETTING!
+-----------------------
+*/
+.box {
+  margin: 80px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+
+.box a.btn {
+  margin-top: 25px;
+}
+
+.box img {
+  max-height: 100px;
+}
+
+.box .box-header {
+  background: #f7f7f7;
+  margin: 20px 0 20px;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.box .box-footer {
+  background: #f7f7f7;
+  margin-top: 30px;
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+.profiles{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: #eee;
+}
+.categories{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.categories .hovering:hover{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.categories .hovering{
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.categories img{
+  max-height: 150px;
+}
+.categories a{
+  color: #000000 !important;
+  text-decoration: none;
+}
 .huge {
   font-size: 40px;
 }
@@ -50,13 +151,11 @@
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(http://fonts.googleapis.com/css?family=Gudea);
 .footer1 {
-    background: #fff url("../images/footer/footer-bg.png") repeat scroll left top;
+  background-color: #eee;
   padding-top: 40px;
   padding-right: 0;
   padding-bottom: 20px;
-  padding-left: 0;/*  border-top-width: 4px;
-  border-top-style: solid;
-  border-top-color: #003;*/
+  padding-left: 0;
 }
 
 
@@ -176,13 +275,6 @@
     min-height: 30px;
     padding: 7px 0;
 }
-.design {
-    color: #fff;
-    line-height: 30px;
-    min-height: 30px;
-    padding: 7px 0;
-    text-align: right;
-}
 .design a {
     color: #fff;
 }
@@ -191,3 +283,45 @@
 /************************************************************
 *************************Footer******************************
 *************************************************************/
+.btn-outline {
+  color: white;
+  border-radius: 0;
+  background-color: inherit;
+}
+.btn-primary.btn-outline {
+  background-color: #428bca;
+}
+.btn-success.btn-outline {
+  background-color: #5cb85c;
+}
+.btn-info.btn-outline {
+  background-color: #5bc0de;
+}
+.btn-warning.btn-outline {
+  background-color: #f0ad4e;
+}
+.btn-danger.btn-outline {
+  background-color: #d9534f;
+}
+.btn-outline:hover {
+  color: inherit;
+  border-color: currentColor;
+  border-radius: 0;
+  background-color: transparent;
+  transition: all .5s;
+}
+.btn-primary.btn-outline:hover {
+  color: #428bca;
+}
+.btn-success.btn-outline:hover {
+  color: #5cb85c;
+}
+.btn-info.btn-outline:hover {
+  color: #5bc0de;
+}
+.btn-warning.btn-outline:hover {
+  color: #f0ad4e;
+}
+.btn-danger.btn-outline:hover {
+  color: #d9534f;
+}
