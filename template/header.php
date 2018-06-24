@@ -8,8 +8,6 @@
     <title><?php echo $title; ?></title>
 
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="./bootstrap/css/jumbotron.css" rel="stylesheet">
     <link href="./bootstrap/css/cust-element.css" rel="stylesheet">
   </head>
 
@@ -38,9 +36,9 @@
         </form>
 
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="books.php"><i class="fas fa-book"></i>&nbsp; Buku</a></li>
-              <li><a href="publisher_list.php"><i class="fas fa-paperclip"></i>&nbsp; Penerbit</a></li>
-              <li><a href="publication.php"><i class="fas fa-barcode"></i>&nbsp; Publikasi</a></li>
+              <li><a href="produk_lab.php"><i class="fas fa-flask"></i>&nbsp; Produk Lab</a></li>
+              <li><a href="books.php"><i class="fas fa-book"></i>&nbsp; Buku Akademik</a></li>
+              <li><a href="publication.php"><i class="fas fa-barcode"></i>&nbsp; Penerbitan Buku</a></li>
               <li><a href="cart.php"><i class="fas fa-shopping-cart"></i>&nbsp; Keranjang</a></li>
             </ul>
         </div>
@@ -51,12 +49,9 @@
     ?>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      <div class="container">
+      <div class="container text-center">
         <h1>Global Science</h1>
-        <!-- <p class="lead">This site has been made using PHP with MYSQL (procedure functions)!</p>
-        <p>The layout use Bootstrap to make it more responsive. It's just a simple web!</p> -->
+        <p>Center of Science Product</p>
       </div>
     </div>
     <?php } ?>
-
-    <div class="container" id="main">

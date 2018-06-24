@@ -1,17 +1,14 @@
-      	<hr>
-
-        <footer class="footer1">
+        <footer class="spacing footer1">
 <div class="container">
-
 <div class="row"><!-- row -->
   <div class="col-lg-3 col-md-3"><!-- widgets column left -->
     <ul class="list-unstyled clear-margins"><!-- widgets -->
       <li class="widget-container widget_nav_menu"><!-- widgets list -->
         <h1 class="title-widget">Sitemap</h1>
         <ul>
-          <li><a  href="#"><i class="fas fa-angle-double-right"></i> Publikasi</a></li>
-          <li><a  href="#"><i class="fas fa-angle-double-right"></i> Penerbit</a></li>
-          <li><a  href="#"><i class="fas fa-angle-double-right"></i> Buku</a></li>
+          <li><a  href="publication.php"><i class="fas fa-angle-double-right"></i> Penerbitan Buku</a></li>
+          <li><a  href="produk_lab.php"><i class="fas fa-angle-double-right"></i> Produk Lab</a></li>
+          <li><a  href="books.php"><i class="fas fa-angle-double-right"></i> Buku Akademik</a></li>
         </ul>
       </li>
     </ul>
@@ -58,6 +55,7 @@
 </div>
 
 </div>
+</div>
 </footer>
 
     </div> <!-- /container -->
@@ -67,14 +65,17 @@
 
     <div class="row">
 
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
         <div class="copyright">
 
           © 2018, Global Science, All rights reserved
+          <div class="design pull-right">
+            <a target="_blank" href="https://www.freepik.com/" style="text-decoration: none;"><i class="fas fa-heart"></i> Freepik</a>
+          </div>
 
         </div>
-
+        
       </div>
 
     </div>

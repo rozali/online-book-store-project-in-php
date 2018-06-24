@@ -24,8 +24,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php" style="padding: 0px;">
-           <img src="./bootstrap/img/ico.png">
+          <a class="navbar-brand" href="index.php">
+           Admin Home
           </a>
         </div>
         <!--/.navbar-collapse -->
@@ -38,10 +38,10 @@
         </form>
 
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="books.php"><i class="fas fa-book"></i>&nbsp; Buku</a></li>
-              <li><a href="publisher_list.php"><i class="fas fa-paperclip"></i>&nbsp; Penerbit</a></li>
+              <li><a href="admin_book.php"><i class="fas fa-book"></i>&nbsp; Buku</a></li>
+              <!-- <li><a href="publisher_list.php"><i class="fas fa-paperclip"></i>&nbsp; Penerbit</a></li>
               <li><a href="publication.php"><i class="fas fa-barcode"></i>&nbsp; Publikasi</a></li>
-              <li><a href="cart.php"><i class="fas fa-shopping-cart"></i>&nbsp; Keranjang</a></li>
+              <li><a href="cart.php"><i class="fas fa-shopping-cart"></i>&nbsp; Keranjang</a></li> -->
             </ul>
         </div>
       </div>
@@ -52,7 +52,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Global Science</h1>
+        <h1>Global Science, Center of Science Product</h1>
         <!-- <p class="lead">This site has been made using PHP with MYSQL (procedure functions)!</p>
         <p>The layout use Bootstrap to make it more responsive. It's just a simple web!</p> -->
       </div>
