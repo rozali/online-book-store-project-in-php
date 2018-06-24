@@ -28,6 +28,7 @@
 	// connect database
 	if(isset($_SESSION['cart']) && (array_count_values($_SESSION['cart']))){
 ?>
+<div class="container" id="main">
 	<table class="table">
 		<tr>
 			<th>Buku</th>
@@ -66,6 +67,8 @@
 			<th><?php echo rupiah(($_SESSION['total_price'] + 0)); ?></th>
 		</tr>
 	</table>
+</div>
+<div class="container">
 <div class="row">
 	<div class="col-md-12">
     <div class="panel panel-primary">
@@ -109,9 +112,10 @@
     </div>
   </div>
 </div>
+</div>
 <?php
 	} else {
-		echo "<p class=\"text-warning\">Keranjang Belanja anda kosong! Silahkan kembali ke halaman <a href=\"books.php\">buku</a> untuk belanja!</p>";
+		echo "<p class=\"text-warning\ spacing\">Keranjang Belanja anda kosong! Silahkan kembali ke halaman <a href=\"books.php\">buku</a> untuk belanja!</p>";
 	}
 	if(isset($conn)){ mysqli_close($conn); }
 	require_once "./template/footer.php";

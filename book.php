@@ -21,6 +21,7 @@
   $title = $row['book_title'];
   require "./template/header.php";
 ?>
+<div class="container" id="main">
       <!-- Example row of columns -->
       <p class="lead" style="margin: 25px 0"><a href="books.php">Buku</a> > <?php echo $row['book_title']; ?></p>
       <div class="row">
@@ -67,6 +68,7 @@
           </form>
        	</div>
       </div>
+    </div>
 <?php
   require "./template/footer.php";
 ?>

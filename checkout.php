@@ -17,6 +17,7 @@
 
 	if(isset($_SESSION['cart']) && (array_count_values($_SESSION['cart']))){
 ?>
+<div class="container" id="main">
 <div class="row">
   <div class="col-md-8">
       <div class="panel panel-default">
@@ -92,9 +93,10 @@
   	</div>
   </div>
 </div>
+</div>
 <?php
 	} else {
-		echo "<p class=\"text-warning\">Keranjang Belanja anda kosong! Silahkan kembali ke halaman <a href=\"books.php\">buku</a> untuk belanja!</p>";
+		echo "<p class=\"text-warning\ spacing\">Keranjang Belanja anda kosong! Silahkan kembali ke halaman <a href=\"books.php\">buku</a> untuk belanja!</p>";
 	}
 	if(isset($conn)){ mysqli_close($conn); }
 	require_once "./template/footer.php";

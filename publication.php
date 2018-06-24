@@ -2,6 +2,7 @@
   $title = "Publikasi Buku Ajar";
   require_once "./template/header.php";
 ?>
+<div class="container" id="main">
 <div class="row">
   <div class="col-lg-12">
     <div class="panel panel-default">
@@ -29,6 +30,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 <?php
   require_once "./template/footer.php";

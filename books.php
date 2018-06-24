@@ -15,13 +15,14 @@
   $title = "Full Catalogs of Books";
   require_once "./template/header.php";
 ?>
+<div class="container" id="main">
 <div class="row">
   <div class="col-md-9">
   <p class="lead text-center text-muted">Katalog Buku</p>
     <?php for($i = 0; $i < mysqli_num_rows($result); $i++){ ?>
       <div class="row">
         <?php while($query_row = mysqli_fetch_assoc($result)){ ?>
-          <div class="col-md-3">
+          <div class="col-md-3 col-xs-3">
             <a href="book.php?bookisbn=<?php echo $query_row['book_isbn']; ?>">
               <img class="img-responsive img-thumbnail" src="./bootstrap/img/<?php echo $query_row['book_image']; ?>">
             </a>
@@ -95,6 +96,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 <?php
   require_once "./template/footer.php";

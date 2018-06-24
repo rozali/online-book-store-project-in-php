@@ -59,6 +59,7 @@
 		$_SESSION['total_price'] = total_price($_SESSION['cart']);
 		$_SESSION['total_items'] = total_items($_SESSION['cart']);
 ?>
+<div class="container" id="main">
    	<form action="cart.php" method="post">
 	   	<table class="table">
 	   		<tr>
@@ -92,9 +93,10 @@
 	<a href="cart.php?action=empty" class="btn btn-primary">Kosongkan</a>
 	<a href="checkout.php" class="btn btn-primary">Pembayaran</a>
 	<a href="books.php" class="btn btn-primary">Lanjutkan Belanja</a>
+</div>
 <?php
 	} else {
-		echo "<p class=\"text-warning\">Keranjang Belanja anda kosong! Silahkan kembali ke halaman <a href=\"books.php\">buku</a> untuk belanja!</p>";
+		echo "<p class=\"text-warning\ spacing\">Keranjang Belanja anda kosong! Silahkan kembali ke halaman <a href=\"books.php\">buku</a> untuk belanja!</p>";
 	}
 	if(isset($conn)){ mysqli_close($conn); }
 	require_once "./template/footer.php";
