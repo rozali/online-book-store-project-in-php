@@ -51,7 +51,7 @@
     <div class="jumbotron">
       <div class="container text-center">
         <h1>Global Science</h1>
-        <p>Center of Science Product</p>
+        <p>Pusat Buku Akademik Perguruan Tinggi Indonesia</p>
       </div>
     </div>
     <?php } ?>

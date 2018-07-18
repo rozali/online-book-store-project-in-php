@@ -17,7 +17,7 @@
         <h1>PROFIL <span>GLOBAL</span> <span>SCIENCE</span></h1>
       </div>
       <div class="col-xs-12 text-center spacing">
-        <p><strong>Global Science</strong> bergerak khusus di produk-produk akademik perguruan tinggi, seperti menyediakan buku, alat-alat laboratorium serta alat dan bahan penelitian.</p><p>Kami menggaransi proses pemesanan yang cepat dan harga yang sesuai</p>
+        <p><strong>Global Science</strong> merupakan pusat penjualan dan penerbitan buku berkualitas untuk perguruan tinggi atau Universitas. Kami menyediakan buku nasional dan internasional untuk para dosen dan mahasiswa di Indonesia.</p><p><strong>Global Science</strong> juga berkomitmen menyediakan Buku akademik gratis untuk memajukan dunia pendidikan dan mencerdaskan bangsa.</p>
       </div>
       <div class="col-xs-12 text-center spacing">
         <button type="button" class="btn btn-outline btn-info btn-lg text-center">Read More</button>
