@@ -20,5 +20,5 @@
 	</form>
 
 <?php
-	require_once "./template/footer.php";
+	require_once "./template/admin_footer.php";
 ?>

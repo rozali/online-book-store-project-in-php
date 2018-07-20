@@ -65,5 +65,5 @@
 	<a href="admin_book.php" class="btn btn-success">Confirm</a>
 <?php
 	if(isset($conn)) {mysqli_close($conn);}
-	require "./template/footer.php"
+	require "./template/admin_footer.php"
 ?>

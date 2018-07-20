@@ -36,7 +36,7 @@
         </form>
 
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="produk_lab.php"><i class="fas fa-flask"></i>&nbsp; Produk Lab</a></li>
+              <li><a href="buku_gratis.php"><i class="fas fa-book-open"></i>&nbsp; Buku Gratis</a></li>
               <li><a href="books.php"><i class="fas fa-book"></i>&nbsp; Buku Akademik</a></li>
               <li><a href="publication.php"><i class="fas fa-barcode"></i>&nbsp; Penerbitan Buku</a></li>
               <li><a href="cart.php"><i class="fas fa-shopping-cart"></i>&nbsp; Keranjang</a></li>

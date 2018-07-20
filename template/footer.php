@@ -7,7 +7,7 @@
         <h1 class="title-widget">Sitemap</h1>
         <ul>
           <li><a  href="publication.php"><i class="fas fa-angle-double-right"></i> Penerbitan Buku</a></li>
-          <li><a  href="produk_lab.php"><i class="fas fa-angle-double-right"></i> Produk Lab</a></li>
+          <li><a  href="buku_gratis.php"><i class="fas fa-angle-double-right"></i> Buku Gratis</a></li>
           <li><a  href="books.php"><i class="fas fa-angle-double-right"></i> Buku Akademik</a></li>
         </ul>
       </li>
